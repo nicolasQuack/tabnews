@@ -4,7 +4,7 @@
   "description": "Repositório criado para dar continuidade no curso de Filipe Deschamps, no curso.dev.",
   "main": "index.js",
   "scripts": {
-    "dev": "./init-dev.sh",
+    "dev": "chmod +x ./init-dev.sh && ./init-dev.sh",
     "services:up": "docker compose -f infra/compose.yaml up -d",
     "services:down": "docker compose -f infra/compose.yaml down",
     "services:stop": "docker compose -f infra/compose.yaml stop",
