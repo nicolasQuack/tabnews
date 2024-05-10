@@ -22,8 +22,8 @@ async function status(request, response) {
       database: {
         version: dbVersionRow,
         connections: {
-          current_connections: dbCurrentConnectionsValue,
           max_connections: parseInt(dbMaxConnectionsValue),
+          current_connections: dbCurrentConnectionsValue,
         },
       },
     },
